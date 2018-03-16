@@ -1,0 +1,130 @@
+//output: ../blog.html
+doctype
+html(class="no-js", lang="pt-BR", dir="ltr")
+
+  head
+    include includes/head
+    //css
+    
+  body
+    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+      //close button
+      button(class="close-button", aria-label="Close Menu", type="button", data-close)
+        span(aria-hidden="true") &times
+      //Menu
+      ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
+        li
+          a home
+        li 
+          a Sobre Nós
+        li
+          a Serviços
+        li
+          a Profissionais
+        li
+          a Blog
+        li
+          a contato
+          
+    div(class="off-canvas-content", data-off-canvas-content)
+      //header
+      include includes/header-internas
+      //header
+      //banner-pagina
+      include includes/banner-pagina
+      //banner-pagina
+      //main
+      main.main
+        section.custom-section#blog-list
+          div.grid-container
+            div.grid-x.grid-padding-x.grid-margin-x
+              div.cell.small-12.medium-8.large-9
+                article.blog-post-list
+                  a(href="")
+                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/03/siteguilherme-870x398.jpg", alt="")
+                  h2
+                    a(href="") Titulo do Post
+                  div.entry-meta
+                    span.posted-on
+                      p.subheader
+                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right Nenhum Comentário]
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                  a(href="", class="saiba-mais") LEIA MAIS
+                  div.tag-list
+                    a(href="", class="button small bg1 mr-button") tag1
+                    a(href="", class="button small bg1 mr-button") iluminaodontologia
+                hr
+                //blog-post
+                article.blog-post-list
+                  a(href="")
+                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/03/siteguilherme-870x398.jpg", alt="")
+                  h2
+                    a(href="") Titulo do Post
+                  div.entry-meta
+                    span.posted-on
+                      p.subheader
+                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right Nenhum Comentário]
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                  a(href="", class="saiba-mais") LEIA MAIS
+                  div.tag-list
+                    a(href="", class="button small bg1 mr-button") tag1
+                    a(href="", class="button small bg1 mr-button") iluminaodontologia
+                hr
+                //blog-post
+                article.blog-post-list
+                  a(href="")
+                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/03/siteguilherme-870x398.jpg", alt="")
+                  h2
+                    a(href="") Titulo do Post
+                  div.entry-meta
+                    span.posted-on
+                      p.subheader
+                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right Nenhum Comentário]
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                  a(href="", class="saiba-mais") LEIA MAIS
+                  div.tag-list
+                    a(href="", class="button small bg1 mr-button") tag1
+                    a(href="", class="button small bg1 mr-button") iluminaodontologia
+                hr
+                //blog-post
+                article.blog-post-list
+                  a(href="")
+                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/03/siteguilherme-870x398.jpg", alt="")
+                  h2
+                    a(href="") Titulo do Post
+                  div.entry-meta
+                    span.posted-on
+                      p.subheader
+                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right Nenhum Comentário]
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                  a(href="", class="saiba-mais") LEIA MAIS
+                  div.tag-list
+                    a(href="", class="button small bg1 mr-button") tag1
+                    a(href="", class="button small bg1 mr-button") iluminaodontologia
+                hr
+                //blog-post
+                article.blog-post-list
+                  a(href="")
+                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/03/siteguilherme-870x398.jpg", alt="")
+                  h2
+                    a(href="") Titulo do Post
+                  div.entry-meta
+                    span.posted-on
+                      p.subheader
+                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right Nenhum Comentário]
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                  a(href="", class="saiba-mais") LEIA MAIS
+                  div.tag-list
+                    a(href="", class="button small bg1 mr-button") tag1
+                    a(href="", class="button small bg1 mr-button") iluminaodontologia
+                hr
+                //blog-post
+              div.cell.small-12.medium-4.large-3
+                h4 sidebar
+      //main
+      //footer
+      include includes/footer
+      //footer
+    //scripts
+    include includes/foot
+    //scripts

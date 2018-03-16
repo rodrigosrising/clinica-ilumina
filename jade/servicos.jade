@@ -1,0 +1,41 @@
+//output: ../servicos.html
+doctype
+html(class="no-js", lang="pt-BR", dir="ltr")
+
+  head
+    include includes/head
+    //css
+    
+  body
+    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+      //close button
+      button(class="close-button", aria-label="Close Menu", type="button", data-close)
+        span(aria-hidden="true") &times
+      //Menu
+      ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
+        li
+          a home
+        li 
+          a Sobre Nós
+        li
+          a Serviços
+        li
+          a Profissionais
+        li
+          a Blog
+        li
+          a contato
+          
+    div(class="off-canvas-content", data-off-canvas-content)
+      //header
+      include includes/header-internas
+      //header
+      //banner-pagina
+      include includes/banner-pagina
+      //banner-pagina
+      //footer
+      include includes/footer
+      //footer
+    //scripts
+    include includes/foot
+    //scripts

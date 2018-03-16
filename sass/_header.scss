@@ -1,0 +1,99 @@
+/*HEADER*/
+.sticky-header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.is-stuck {
+  .header {
+    background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .menu-icon:after {
+    background: #0a0a0a;
+    box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;
+  }
+}
+/*LOGO*/
+.custom-logo-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 1.5rem 0;
+  -webkit-transition: padding 0.25s ease;
+  -moz-transition: padding 0.25s ease;
+  -ms-transition: padding 0.25s ease;
+  -o-transition: padding 0.25s ease;
+  transition: padding 0.25s ease;
+
+  .custom-logo-link {
+    display: block;
+
+    .custom-logo {
+      position: relative;
+      z-index: 1111;
+    }
+  }
+  &::before {
+    content: '';
+    background: url("../img/fundo-logo-top.png") no-repeat 0 0;
+    height: 512px;
+    width: 1153px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    -ms-transition: opacity 0.25s ease;
+    -o-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+  }
+}
+.hide-background{
+  &::before {
+    content: '';
+    display: none;
+  }
+}
+.custom-logo {
+  width: 100%;
+  -webkit-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -ms-transition: width 0.25s ease;
+  -o-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+
+.is-stuck {
+  .custom-logo-wrapper {
+    padding: 0.7rem 0;
+
+    .custom-logo {
+      width: 84%;
+    }
+  }
+
+  .custom-logo-wrapper{
+    &::before {
+      opacity: 0;
+    }
+  }
+}

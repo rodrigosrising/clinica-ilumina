@@ -1,0 +1,136 @@
+//output: ../index.html
+doctype
+html(class="no-js", lang="pt-BR", dir="ltr")
+
+  head
+    include includes/head
+    //css
+    
+  body
+    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+      //close button
+      button(class="close-button", aria-label="Close Menu", type="button", data-close)
+        span(aria-hidden="true") &times
+      //Menu
+      ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
+        li
+          a home
+        li 
+          a Sobre Nós
+        li
+          a Serviços
+        li
+          a Profissionais
+        li
+          a Blog
+        li
+          a contato
+          
+    div(class="off-canvas-content", data-off-canvas-content)
+      //header
+      include includes/header
+      //header
+      //banner
+      include includes/banner
+      //banner
+      //main
+      main.main
+        //sobre
+        section.custom-section#sobre
+          div.grid-container
+            div.grid-x.grid-margin-x.grid-padding-x
+              div.cell.small-12.medium-6
+                h2 Clíninca #[span Ilúmina]
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus, temporibus illum officia minus explicabo iste voluptatem facilis nisi excepturi harum!
+                a(href="#", class="saiba-mais") SAIBA MAIS
+              div.cell.small-12.medium-6
+                img(src="assets/img/clinica-home.png", height="320", width="582", alt="")
+        //equipe
+        section.custom-section.bg1#equipe
+          div.grid-container
+            div.grid-x.grid-margin-x.grid-padding-x
+              div.cell
+                h2 Nossos #[span Profissionais]
+              div.cell
+                div.grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-3
+                  div.cell.profissionais
+                    div.profissional.card
+                      div.image-container
+                        div.image-cover
+                        img(src="assets/img/dr1.jpg", height="385", width="385")
+                        div.nome-container
+                          h4 DRa Adriana Traczinski
+                      div.card-section
+                        p CRO 10.204
+                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                        a(href="#", class="saiba-mais") SAIBA MAIS
+                  div.cell.profissionais
+                    div.profissional.card
+                      div.image-container
+                        div.image-cover
+                        img(src="assets/img/dr2.jpg", height="385", width="385")
+                        div.nome-container
+                          h4 DRa Adriana Traczinski
+                      div.card-section
+                        p CRO 10.204
+                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                        a(href="#", class="saiba-mais") SAIBA MAIS
+                  div.cell.profissionais
+                    div.profissional.card
+                      div.image-container
+                        div.image-cover
+                        img(src="assets/img/dr3.jpg", height="385", width="385")
+                        div.nome-container
+                          h4 DRa Adriana Traczinski
+                      div.card-section
+                        p CRO 10.204
+                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                        a(href="#", class="saiba-mais") SAIBA MAIS
+        //blog
+        section.custom-section#blog
+          div.grid-container
+            div.grid-x.grid-padding-x.grid-margin-x
+              div.cell
+                h2 Últimas notícias #[span Odontológicas]
+              div.cell
+                div.grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4
+                  div.cell.blog-home
+                    a(href="#")
+                      img(src="assets/img/blog-home1.jpg", alt="Titulo do Post")
+                    h5
+                      a(href="#") Titulo do Post
+                    p
+                      small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
+                    a(href="#", class="saiba-mais") LEIA MAIS
+                  div.cell.blog-home
+                    a(href="#")
+                      img(src="assets/img/blog-home2.jpg", alt="Titulo do Post")
+                    h5
+                      a(href="#") Titulo do Post
+                    p
+                      small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
+                    a(href="#", class="saiba-mais") LEIA MAIS
+                  div.cell.blog-home
+                    a(href="#")
+                      img(src="assets/img/blog-home3.jpg", alt="Titulo do Post")
+                    h5
+                      a(href="#") Titulo do Post
+                    p
+                      small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
+                    a(href="#", class="saiba-mais") LEIA MAIS
+                  div.cell.blog-home
+                    a(href="#")
+                      img(src="assets/img/blog-home1.jpg", alt="Titulo do Post")
+                    h5
+                      a(href="#") Titulo do Post
+                    p
+                      small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
+                    a(href="#", class="saiba-mais") LEIA MAIS
+              
+      //main
+      //footer
+      include includes/footer
+      //footer
+    //scripts
+    include includes/foot
+    //scripts

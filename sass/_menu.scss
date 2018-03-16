@@ -1,0 +1,68 @@
+/*OFFCANVAS MENU*/
+.off-canvas {
+  background: $cor;
+  z-index: 100 !important;
+}
+
+.off-canvas-menu {
+  li a {
+    color: $cor1;
+    white-space: normal;
+    border-bottom: 1px solid $cor1;
+  }
+
+  .active > a,
+  .is-active > a,
+  a:focus,
+  a:hover {
+    color: $cor;
+    background: rgba(140, 117, 34, 0.8);
+  }
+
+  .submenu-toggle {
+    background: #1b327f;
+    &::after {
+      border-color: $cor transparent transparent;
+    }
+  }
+}
+/*MENU*/
+.main-menu {
+  a {
+    position: relative;
+    display: inline-block;
+    &:after {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1px;
+      background: $cor1;
+      transition: all 0.6s linear;
+      width: 0;
+      bottom: 8px;
+    }
+    &:before {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1px;
+      background: $cor2;
+      transition: all 0.5s linear;
+      width: 0;
+      bottom: 8px;
+    }
+  }
+
+  .active > a:after,
+  .active > a:before,
+  a:hover::after,
+  a:hover::before {
+    width: calc(100% - 2rem);
+    left: calc(0px + 1rem);
+  }
+
+  .active > a {
+    background: none;
+    color: $cor1;
+  }
+}
