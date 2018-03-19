@@ -11,7 +11,8 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #233440; }
 
 :focus,
 :hover {
@@ -471,18 +472,38 @@ textarea {
   padding-bottom: 10px;
   border-bottom: 1px solid #efefef; }
   .blog-post-list img {
-    margin-bottom: 10px; }
+    margin-bottom: 1rem; }
   .blog-post-list h2 {
-    font-size: 2.8rem;
-    color: #fdd9aa; }
+    font-size: 2.2rem;
+    color: #fdd9aa;
+    line-height: 2.5rem;
+    margin-bottom: 1rem; }
     .blog-post-list h2 a {
       color: #feba90; }
       .blog-post-list h2 a:hover {
         color: #fdd9aa; }
+  .blog-post-list .entry-meta {
+    border-top: 1px dotted #efefef;
+    border-bottom: 1px dotted #efefef;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    padding: 0.2rem 0.5rem; }
+    .blog-post-list .entry-meta P {
+      margin: 0; }
+    .blog-post-list .entry-meta i {
+      margin-top: 0.4rem; }
   .blog-post-list .tag-list {
     margin-top: 14px; }
-    .blog-post-list .tag-list a.button {
-      margin: 1px; }
+    .blog-post-list .tag-list p a.button {
+      margin: 1px;
+      padding: 0.3rem 0.5rem; }
+
+.post-content p a {
+  font-weight: bold;
+  color: #FEBB91;
+  border-bottom: 1px dashed #fdd9aa; }
+  .post-content p a:hover {
+    border-bottom: 1px dashed #233440; }
 
 .widget-sidebar {
   width: 100%;
