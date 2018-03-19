@@ -14,7 +14,7 @@ html(class="no-js", lang="pt-BR", dir="ltr")
       //Menu
       ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
         li
-          a home
+          a Home
         li 
           a Sobre Nós
         li
@@ -44,19 +44,47 @@ html(class="no-js", lang="pt-BR", dir="ltr")
                 article.blog-post-list
                   a(href="")
                     img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="") Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
+                  h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
                   div.entry-meta
                     span.posted-on
                       p.subheader
                         small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
                   div.post-content
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis
-                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa illo fuga excepturi minus ipsa architecto eaque voluptates, reprehenderit temporibus odio reiciendis vitae repudiandae exercitationem quisquam nostrum! Repellat, minima, voluptatem. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis.
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[a(href="$") In impedit enim dicta ab architecto quasi maxime iste blanditiis]. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa illo fuga excepturi minus ipsa architecto eaque voluptates, reprehenderit temporibus odio reiciendis vitae repudiandae exercitationem quisquam nostrum! Repellat, minima, voluptatem. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis.
+                    h2 In impedit enim dicta ab architecto quasi maxime iste blanditiis.
+                    h3 In impedit enim dicta ab architecto quasi maxime iste blanditiis.
+                    h4 In impedit enim dicta ab architecto quasi maxime iste blanditiis.
+                    h5 In impedit enim dicta ab architecto quasi maxime iste blanditiis.
+                    h6 In impedit enim dicta ab architecto quasi maxime iste blanditiis.
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[strong Eligendi] culpa illo fuga excepturi minus ipsa architecto eaque voluptates, reprehenderit temporibus odio reiciendis vitae repudiandae exercitationem quisquam nostrum! Repellat, minima, voluptatem. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto #[em velit impedit unde officiis].
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[a(href="#") In impedit enim dicta ab architecto quasi maxime iste blanditiis]. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa illo fuga excepturi minus ipsa architecto eaque voluptates, reprehenderit temporibus odio reiciendis vitae repudiandae exercitationem quisquam nostrum! Repellat, minima, voluptatem. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis.
                     blockquote In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis.
                     p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa illo fuga excepturi minus ipsa architecto eaque voluptates, reprehenderit temporibus odio reiciendis vitae repudiandae exercitationem quisquam nostrum! Repellat, minima, voluptatem. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis.
-
+                  
+                  div.compartilhe
+                    p
+                      small Compartilhe:
+                    div(class="button-group share-buttons")
+                      span(data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Facebook")
+                        a(class="button facebook", id="facebook-share", href="https://www.facebook.com/sharer/sharer.php?u=LINK_DO_POST", onclick="window.open(this.href, 'Compartilhar notícia', 'width=490,height=530');return false;")
+                          i(class="fa fa-facebook")
+                      span(data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Twitter")
+                        a(class="button twitter" id="twitter-share" href="https://twitter.com/home?status=LINK_DO_POST" onclick="window.open(this.href, 'Compartilhar notícia', 'width=490,height=530');return false;")
+                          i(class="fa fa-twitter")
+                      span(data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="LinkedIn")
+                        a(class="button linkedin" id="linkedin-share" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=LINK_DO_POST&amp;title=TITULO_DO_POST&amp;summary=&amp;source=LINK_DO_SITE" onclick="window.open(this.href, 'Compartilhar notícia', 'width=490,height=530');return false;")
+                          i(class="fa fa-linkedin")
+                      span(data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Google +")
+                        a(class="button google-plus" id="google-plus-share" href="https://plus.google.com/share?url=LINK_DO_POST" onclick="window.open(this.href, 'Compartilhar notícia', 'width=490,height=530');return false;")
+                          i(class="fa fa-google-plus")
+                      span(data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Facebook")
+                        a(class="button whatsapp" id="whatsapp-share" href="whatsapp://send?text=LINK_DO_POST" onclick="window.open(this.href, 'Compartilhar notícia', 'width=490,height=530');return false;")
+                          i(class="fa fa-whatsapp")
+                      
+                      
+                      
+                      
+                      
                   div.tag-list
                     p.subheader
                       small

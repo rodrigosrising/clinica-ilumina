@@ -68,3 +68,15 @@
     }
   }
 }
+
+.social-buttons{
+  a{
+    background: $cor;
+    color: $cor2;
+    @extend %transition;
+    &:hover{
+      color: $cor;
+      background: $cor1;
+    }
+  }
+}

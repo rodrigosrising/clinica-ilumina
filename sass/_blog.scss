@@ -36,22 +36,40 @@
 		p{
 			a.button{
 				margin: 1px;
-				padding: 0.3rem 0.5rem;
+				padding: 3px 5px;
+				color: $cor;
+				border-bottom: none;
 			}
+		}
+		i{
+			margin-right: 0.3rem;
 		}
 	}
 }
-.post-content{
-	p{
-		a{
-			font-weight: bold;
-			color: $cor2;
-			border-bottom: 1px dashed $cor3;
-			&:hover{
-				border-bottom: 1px dashed $cor1;
+.blog-post-list{
+	h1{
+		color: $cor1;
+		font-size: 2.4rem;
+	}
+	h2{
+		color: $cor1;
+	}
+	.post-content{
+		h1, h2, h3, h4, h5, h6{
+			font-family: $openSans;
+		}
+		p{
+			a{
+				font-weight: bold;
+				color: $cor2;
+				border-bottom: 1px dashed $cor3;
+				&:hover{
+					border-bottom: 1px dashed $cor1;
+				}
 			}
 		}
 	}
+
 }
 .widget-sidebar{
 	width: 100%;
@@ -86,8 +104,71 @@
 			}
 		}
 	}
+	button[type='submit']{
+		border: 1px solid $cor2;
+		&:hover{
+			border: 1px solid $cor1;
+		}
+	}
 }
 .pagination .current, .pagination .current:hover{
 	background: $cor2;
 	color: $cor;
+}
+
+// SHARE BUTTONS
+p{
+	.share-info{
+	margin-bottom: 0;
+	}
+}
+.share-buttons{
+	.has-tip{
+	border: none;
+	}
+	a{
+	border: none;
+	width: 33px;
+	height: 33px;
+		i{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		}
+	}
+	a.button{
+	padding: 0;
+	margin-right: 3px!important;
+	color: #FFF;
+	@extend %transition;
+	}
+	a.button.facebook{
+	background: rgb(59, 89, 152);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.twitter{
+	background: rgb(29, 161, 242);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.linkedin{
+	background: rgb(0, 119, 181);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.google-plus{
+	background: rgb(220, 78, 65);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.whatsapp{
+	background: rgb(77, 194, 71);
+		&:hover{
+			background: $cor1;
+		}
+	}
 }

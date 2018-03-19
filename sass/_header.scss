@@ -11,11 +11,7 @@
   width: 100%;
   z-index: 1000;
   background: rgba(255, 255, 255, 0);
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  @extend %transition;
   border-bottom: 1px solid transparent;
 }
 
@@ -37,11 +33,7 @@
   display: inline-block;
   width: auto;
   padding: 1.5rem 0;
-  -webkit-transition: padding 0.25s ease;
-  -moz-transition: padding 0.25s ease;
-  -ms-transition: padding 0.25s ease;
-  -o-transition: padding 0.25s ease;
-  transition: padding 0.25s ease;
+  @extend %transition;
 
   .custom-logo-link {
     display: block;
@@ -60,11 +52,7 @@
     top: 0;
     right: -100px;
     opacity: 1;
-    -webkit-transition: opacity 0.25s ease;
-    -moz-transition: opacity 0.25s ease;
-    -ms-transition: opacity 0.25s ease;
-    -o-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
+    @extend %transition;
   }
 }
 .hide-background{
@@ -75,11 +63,7 @@
 }
 .custom-logo {
   width: 100%;
-  -webkit-transition: width 0.25s ease;
-  -moz-transition: width 0.25s ease;
-  -ms-transition: width 0.25s ease;
-  -o-transition: width 0.25s ease;
-  transition: width 0.25s ease;
+  @extend %transition;
 }
 
 .is-stuck {

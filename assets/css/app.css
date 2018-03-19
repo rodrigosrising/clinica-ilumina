@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display:400i,900");
+.header, .custom-logo-wrapper, .custom-logo-wrapper::before, .custom-logo, .share-buttons a.button, .social-buttons a {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
 .bg1 {
   background: #F8F8F8;
   border-top: 1px solid #efefef;
@@ -139,11 +146,6 @@ textarea {
   width: 100%;
   z-index: 1000;
   background: rgba(255, 255, 255, 0);
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   border-bottom: 1px solid transparent; }
 
 .is-stuck .header {
@@ -159,12 +161,7 @@ textarea {
   position: relative;
   display: inline-block;
   width: auto;
-  padding: 1.5rem 0;
-  -webkit-transition: padding 0.25s ease;
-  -moz-transition: padding 0.25s ease;
-  -ms-transition: padding 0.25s ease;
-  -o-transition: padding 0.25s ease;
-  transition: padding 0.25s ease; }
+  padding: 1.5rem 0; }
   .custom-logo-wrapper .custom-logo-link {
     display: block; }
     .custom-logo-wrapper .custom-logo-link .custom-logo {
@@ -178,24 +175,14 @@ textarea {
     position: absolute;
     top: 0;
     right: -100px;
-    opacity: 1;
-    -webkit-transition: opacity 0.25s ease;
-    -moz-transition: opacity 0.25s ease;
-    -ms-transition: opacity 0.25s ease;
-    -o-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease; }
+    opacity: 1; }
 
 .hide-background::before {
   content: '';
   display: none; }
 
 .custom-logo {
-  width: 100%;
-  -webkit-transition: width 0.25s ease;
-  -moz-transition: width 0.25s ease;
-  -ms-transition: width 0.25s ease;
-  -o-transition: width 0.25s ease;
-  transition: width 0.25s ease; }
+  width: 100%; }
 
 .is-stuck .custom-logo-wrapper {
   padding: 0.7rem 0; }
@@ -206,23 +193,26 @@ textarea {
 
 /*OFFCANVAS MENU*/
 .off-canvas {
-  background: #FFF;
+  background: #1a2730;
   z-index: 100 !important; }
 
-.off-canvas-menu li a {
-  color: #233440;
-  white-space: normal;
-  border-bottom: 1px solid #233440; }
-.off-canvas-menu .active > a,
-.off-canvas-menu .is-active > a,
-.off-canvas-menu a:focus,
-.off-canvas-menu a:hover {
-  color: #FFF;
-  background: rgba(140, 117, 34, 0.8); }
-.off-canvas-menu .submenu-toggle {
-  background: #1b327f; }
-  .off-canvas-menu .submenu-toggle::after {
-    border-color: #FFF transparent transparent; }
+.off-canvas-menu {
+  background: #233440; }
+  .off-canvas-menu li a {
+    color: #FFF;
+    white-space: normal;
+    border-bottom: 1px solid #1a2730;
+    border-top: 1px solid #2c4150; }
+  .off-canvas-menu .active > a,
+  .off-canvas-menu .is-active > a,
+  .off-canvas-menu a:focus,
+  .off-canvas-menu a:hover {
+    color: #FFF;
+    background: #2c4150; }
+  .off-canvas-menu .submenu-toggle {
+    background: #1b327f; }
+    .off-canvas-menu .submenu-toggle::after {
+      border-color: #FFF transparent transparent; }
 
 /*MENU*/
 .main-menu a {
@@ -496,13 +486,24 @@ textarea {
     margin-top: 14px; }
     .blog-post-list .tag-list p a.button {
       margin: 1px;
-      padding: 0.3rem 0.5rem; }
+      padding: 3px 5px;
+      color: #FFF;
+      border-bottom: none; }
+    .blog-post-list .tag-list i {
+      margin-right: 0.3rem; }
 
-.post-content p a {
+.blog-post-list h1 {
+  color: #233440;
+  font-size: 2.4rem; }
+.blog-post-list h2 {
+  color: #233440; }
+.blog-post-list .post-content h1, .blog-post-list .post-content h2, .blog-post-list .post-content h3, .blog-post-list .post-content h4, .blog-post-list .post-content h5, .blog-post-list .post-content h6 {
+  font-family: "Open Sans", sans-serif; }
+.blog-post-list .post-content p a {
   font-weight: bold;
   color: #FEBB91;
   border-bottom: 1px dashed #fdd9aa; }
-  .post-content p a:hover {
+  .blog-post-list .post-content p a:hover {
     border-bottom: 1px dashed #233440; }
 
 .widget-sidebar {
@@ -532,10 +533,51 @@ textarea {
           color: #FEBB91; }
       .widget-sidebar ul li:last-child {
         border-bottom: none; }
+  .widget-sidebar button[type='submit'] {
+    border: 1px solid #FEBB91; }
+    .widget-sidebar button[type='submit']:hover {
+      border: 1px solid #233440; }
 
 .pagination .current, .pagination .current:hover {
   background: #FEBB91;
   color: #FFF; }
+
+p .share-info {
+  margin-bottom: 0; }
+
+.share-buttons .has-tip {
+  border: none; }
+.share-buttons a {
+  border: none;
+  width: 33px;
+  height: 33px; }
+  .share-buttons a i {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+.share-buttons a.button {
+  padding: 0;
+  margin-right: 3px !important;
+  color: #FFF; }
+.share-buttons a.button.facebook {
+  background: #3b5998; }
+  .share-buttons a.button.facebook:hover {
+    background: #233440; }
+.share-buttons a.button.twitter {
+  background: #1da1f2; }
+  .share-buttons a.button.twitter:hover {
+    background: #233440; }
+.share-buttons a.button.linkedin {
+  background: #0077b5; }
+  .share-buttons a.button.linkedin:hover {
+    background: #233440; }
+.share-buttons a.button.google-plus {
+  background: #dc4e41; }
+  .share-buttons a.button.google-plus:hover {
+    background: #233440; }
+.share-buttons a.button.whatsapp {
+  background: #4dc247; }
+  .share-buttons a.button.whatsapp:hover {
+    background: #233440; }
 
 /*FOOTER*/
 .footer {
@@ -584,5 +626,11 @@ textarea {
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .footer .custom-footer-logo-wrapper {
     margin: 6rem auto 0; } }
+.social-buttons a {
+  background: #FFF;
+  color: #FEBB91; }
+  .social-buttons a:hover {
+    color: #FFF;
+    background: #233440; }
 
 /*# sourceMappingURL=app.css.map */
