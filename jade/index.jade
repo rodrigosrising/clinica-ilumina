@@ -12,19 +12,7 @@ html(class="no-js", lang="pt-BR", dir="ltr")
       button(class="close-button", aria-label="Close Menu", type="button", data-close)
         span(aria-hidden="true") &times
       //Menu
-      ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
-        li
-          a Home
-        li 
-          a Sobre Nós
-        li
-          a Serviços
-        li
-          a Profissionais
-        li
-          a Blog
-        li
-          a Contato
+      include includes/off-canvas-menu
           
     div(class="off-canvas-content", data-off-canvas-content)
       //header
@@ -42,7 +30,7 @@ html(class="no-js", lang="pt-BR", dir="ltr")
               div.cell.small-12.medium-6
                 h2 Clíninca #[span Ilúmina]
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus, temporibus illum officia minus explicabo iste voluptatem facilis nisi excepturi harum!
-                a(href="#", class="saiba-mais") SAIBA MAIS
+                a(href="sobre.html", class="saiba-mais") SAIBA MAIS
               div.cell.small-12.medium-6
                 img(src="assets/img/clinica-home.png", height="320", width="582", alt="")
         //equipe
@@ -52,9 +40,9 @@ html(class="no-js", lang="pt-BR", dir="ltr")
               div.cell
                 h2 Nossos #[span Profissionais]
               div.cell
-                div.grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-3
+                div(class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3", data-equalizer="foo")
                   div.cell.profissionais
-                    div.profissional.card
+                    div(class="profissional card" ,data-equalizer-watch="foo")
                       div.image-container
                         div.image-cover
                         img(src="assets/img/dr1.jpg", height="385", width="385")
@@ -63,9 +51,9 @@ html(class="no-js", lang="pt-BR", dir="ltr")
                       div.card-section
                         p CRO 10.204
                         p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        a(href="#", class="saiba-mais") SAIBA MAIS
+                        a(href="profissionais.html", class="saiba-mais") SAIBA MAIS
                   div.cell.profissionais
-                    div.profissional.card
+                    div(class="profissional card" ,data-equalizer-watch="foo")
                       div.image-container
                         div.image-cover
                         img(src="assets/img/dr2.jpg", height="385", width="385")
@@ -74,18 +62,17 @@ html(class="no-js", lang="pt-BR", dir="ltr")
                       div.card-section
                         p CRO 10.204
                         p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        a(href="#", class="saiba-mais") SAIBA MAIS
-                  div.cell.profissionais
-                    div.profissional.card
+                        a(href="profissionais.html", class="saiba-mais") SAIBA MAIS
+                  div.cell.profissionais.align-self-middle
+                    div(class="profissional card" ,data-equalizer-watch="foo")
                       div.image-container
                         div.image-cover
                         img(src="assets/img/dr3.jpg", height="385", width="385")
-                        div.nome-container
-                          h4 DRa Adriana Traczinski
+                                                
                       div.card-section
-                        p CRO 10.204
-                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        a(href="#", class="saiba-mais") SAIBA MAIS
+                        br
+                        a(href="profissionais.html", class="saiba-mais lead") CONHEÇA #[br] NOSSOS PROFISSIONAIS
+              
         //blog
         section.custom-section#blog
           div.grid-container
@@ -95,37 +82,37 @@ html(class="no-js", lang="pt-BR", dir="ltr")
               div.cell
                 div.grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4
                   div.cell.blog-home
-                    a(href="#")
+                    a(href="post.html")
                       img(src="assets/img/blog-home1.jpg", alt="Titulo do Post")
                     h5
-                      a(href="#") Titulo do Post
+                      a(href="post.html") Titulo do Post
                     p
                       small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
-                    a(href="#", class="saiba-mais") LEIA MAIS
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
                   div.cell.blog-home
-                    a(href="#")
+                    a(href="post.html")
                       img(src="assets/img/blog-home2.jpg", alt="Titulo do Post")
                     h5
-                      a(href="#") Titulo do Post
+                      a(href="post.html") Titulo do Post
                     p
                       small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
-                    a(href="#", class="saiba-mais") LEIA MAIS
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
                   div.cell.blog-home
-                    a(href="#")
+                    a(href="post.html")
                       img(src="assets/img/blog-home3.jpg", alt="Titulo do Post")
                     h5
-                      a(href="#") Titulo do Post
+                      a(href="post.html") Titulo do Post
                     p
                       small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
-                    a(href="#", class="saiba-mais") LEIA MAIS
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
                   div.cell.blog-home
-                    a(href="#")
+                    a(href="post.html")
                       img(src="assets/img/blog-home1.jpg", alt="Titulo do Post")
                     h5
-                      a(href="#") Titulo do Post
+                      a(href="post.html") Titulo do Post
                     p
                       small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus...
-                    a(href="#", class="saiba-mais") LEIA MAIS
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
               
       //main
       //footer

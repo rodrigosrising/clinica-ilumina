@@ -12,19 +12,7 @@ html(class="no-js", lang="pt-BR", dir="ltr")
       button(class="close-button", aria-label="Close Menu", type="button", data-close)
         span(aria-hidden="true") &times
       //Menu
-      ul(class="vertical menu accordion-menu off-canvas-menu", data-accordion-menu, data-submenu-toggle="true")
-        li
-          a Home
-        li 
-          a Sobre Nós
-        li
-          a Serviços
-        li
-          a Profissionais
-        li
-          a Blog
-        li
-          a Contato
+      include includes/off-canvas-menu
           
     div(class="off-canvas-content", data-off-canvas-content)
       //header

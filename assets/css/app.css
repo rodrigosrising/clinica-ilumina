@@ -107,7 +107,10 @@ a:hover {
 
 .close-button {
   z-index: 9999;
-  margin-top: -6px; }
+  margin-top: -6px;
+  color: #FFF; }
+  .close-button:focus, .close-button:hover {
+    color: #FFF; }
 
 .button-menu-icon {
   display: inline-block;

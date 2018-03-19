@@ -123,6 +123,10 @@ a:hover {
 .close-button {
   z-index: 9999;
   margin-top: -6px;
+  color: $cor;
+  &:focus, &:hover{
+    color: $cor;
+  }
 }
 .button-menu-icon{
   display: inline-block;
