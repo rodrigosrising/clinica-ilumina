@@ -407,7 +407,7 @@ textarea {
 .main {
   background: #FFF;
   position: relative;
-  z-index: 10; }
+  z-index: 100; }
 
 /*SECTIONS*/
 .custom-section {
@@ -467,41 +467,53 @@ textarea {
 
 /*BLOG*/
 .blog-post-list {
-  margin-bottom: 15px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #efefef; }
-  .blog-post-list h2 a {
-    color: #F49655; }
+  .blog-post-list img {
+    margin-bottom: 10px; }
+  .blog-post-list h2 {
+    font-size: 2.8rem;
+    color: #fdd9aa; }
+    .blog-post-list h2 a {
+      color: #feba90; }
+      .blog-post-list h2 a:hover {
+        color: #fdd9aa; }
+  .blog-post-list .tag-list {
+    margin-top: 14px; }
+    .blog-post-list .tag-list a.button {
+      margin: 1px; }
 
 .widget-sidebar {
   width: 100%;
   margin: 0 0 1rem;
-  padding: 15px 15px 0;
-  border-bottom: 1px solid #dfdfdf;
+  padding: 15px 0 0;
+  border-bottom: 1px solid #efefef;
   background: #FFF;
-  color: #843b4d; }
+  color: #233440; }
   .widget-sidebar h3 {
     text-transform: uppercase;
     text-align: left;
-    color: #843B4D; }
+    color: #FEBB91;
+    font-size: 1.4rem; }
   .widget-sidebar ul {
     padding: 0 10px;
     margin-left: 0.5rem;
     margin-bottom: 0; }
     .widget-sidebar ul li {
       padding: 5px 5px 5px 0;
-      border-bottom: 1px dashed #DBD2DD;
+      border-bottom: 1px dashed #efefef;
       list-style: square;
       display: list-item; }
       .widget-sidebar ul li a {
-        color: #4C4B4B; }
+        color: #233440; }
         .widget-sidebar ul li a:hover {
-          color: #843B4D; }
+          color: #FEBB91; }
       .widget-sidebar ul li:last-child {
         border-bottom: none; }
 
 .pagination .current, .pagination .current:hover {
-  background: #843B4D;
+  background: #FEBB91;
   color: #FFF; }
 
 /*FOOTER*/

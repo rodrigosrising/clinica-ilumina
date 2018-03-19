@@ -1,25 +1,40 @@
 /*BLOG*/
 .blog-post-list{
-	margin-bottom: 15px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #efefef;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $border-color;
+	img{
+		margin-bottom: 10px;
+	}
 	h2 {
+		font-size: 2.8rem;
+		color: $cor3;
 		a{
-			color: #F49655;
+			color: $cor4;
+			&:hover{
+				color: $cor3;
+			}
+		}
+	}
+	.tag-list{
+		margin-top: 14px;
+		a.button{
+			margin: 1px;
 		}
 	}
 }
 .widget-sidebar{
 	width: 100%;
 	margin: 0 0 1rem;
-	padding: 15px 15px 0;
-	border-bottom: 1px solid #dfdfdf;
-	background: #FFF;
-	color: #843b4d;
+	padding: 15px 0 0;
+	border-bottom: 1px solid $border-color;
+	background: $cor;
+	color: $cor1;
 	h3{
 		text-transform: uppercase;
 		text-align: left;
-		color: #843B4D;
+		color: $cor2;
+		font-size: 1.4rem;
 	}
 	ul{
 		padding: 0 10px;
@@ -27,13 +42,13 @@
 		margin-bottom: 0;
 		li{
 			padding: 5px 5px 5px 0;
-			border-bottom: 1px dashed #DBD2DD;
+			border-bottom: 1px dashed $border-color;
 			list-style: square;
 			display: list-item;
 			a{
-				color: #4C4B4B;
+				color: $cor1;
 				&:hover{
-					color: #843B4D;
+					color: $cor2;
 				}
 			}
 			&:last-child{
@@ -42,8 +57,7 @@
 		}
 	}
 }
-
 .pagination .current, .pagination .current:hover{
-	background: #843B4D;
-	color: #FFF;
+	background: $cor2;
+	color: $cor;
 }
