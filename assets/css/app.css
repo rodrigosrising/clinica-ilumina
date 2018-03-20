@@ -37,14 +37,14 @@ h6 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
   h2 span {
     display: block;
     font-size: 5.5rem;
     color: #FEBB91;
     font-style: italic;
-    font-weight: normal;
-    line-height: 4.5rem; }
+    font-weight: bold;
+    line-height: 4rem; }
 
 @media screen and (max-width: 39.9375em) {
   h2 {
@@ -464,7 +464,7 @@ textarea {
   padding: 1rem 0; }
   .especializacao h3 {
     font-family: "Open Sans", sans-serif;
-    color: #476a82; }
+    color: #233440; }
   .especializacao:nth-child(odd) {
     background: #FFF; }
 

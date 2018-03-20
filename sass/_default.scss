@@ -36,15 +36,15 @@ h6 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
   span {
     display: block;
     font-size: 5.5rem;
     color: $cor2;
     font-style: italic;
-    font-weight: normal;
-    line-height: 4.5rem;
+    font-weight: bold;
+    line-height: 4rem;
   }
 }
 @media screen and (max-width: 39.9375em) {
