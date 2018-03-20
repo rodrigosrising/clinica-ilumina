@@ -459,6 +459,15 @@ textarea {
   .blog-home p {
     line-height: 1.1rem; }
 
+.especializacao {
+  border-bottom: 1px solid #efefef;
+  padding: 1rem 0; }
+  .especializacao h3 {
+    font-family: "Open Sans", sans-serif;
+    color: #476a82; }
+  .especializacao:nth-child(odd) {
+    background: #FFF; }
+
 /*BLOG*/
 .blog-post-list {
   margin-bottom: 30px;
