@@ -1,9 +1,12 @@
 /*OFFCANVAS MENU*/
 .off-canvas {
   background: darken($cor1, 5%);
-  z-index: 100 !important;
+  z-index: 10000 !important;
 }
-
+.js-off-canvas-overlay{
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
 .off-canvas-menu {
   background: $cor1;
   li a {
@@ -66,5 +69,18 @@
   .active > a {
     background: none;
     color: $cor1;
+  }
+}
+
+.off-canvas{
+  .logo-off-canvas{
+    background: $cor;
+    padding: 1rem;
+    a.custom-logo-link{
+      display: block;
+      img.custom-logo{
+        width: auto;
+      }
+    }
   }
 }
