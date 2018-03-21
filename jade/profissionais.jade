@@ -7,84 +7,85 @@ html(class="no-js", lang="pt-BR", dir="ltr")
     //css
     
   body
-    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
-      //close button
-      button(class="close-button", aria-label="Close Menu", type="button", data-close)
-        span(aria-hidden="true") &times
-      //Menu
-      include includes/off-canvas-menu
-          
-    div(class="off-canvas-content", data-off-canvas-content)
-      //header
-      include includes/header-internas
-      //header
-      //banner-pagina
-      include includes/banner-pagina
-      //banner-pagina
-      main.main
-        //equipe
-        section.custom-section#equipe
-          div.grid-container
-            div.grid-x.grid-margin-x.grid-padding-x
-              div.cell
-                h2 Nossos #[span Profissionais]
-              div.cell
-                div.grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3
-                  div.cell.profissionais
-                    div.profissional.card
-                      div.image-container
-                        div.image-cover
-                        img(src="assets/img/dr1.jpg", height="385", width="385")
-                        div.nome-container
-                          h4 DRa Adriana Traczinski
-                      div.card-section
-                        p CRO 10.204
-                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        p 
-                          a(href="$") curriculo 1
-                        p
-                          a(href="$") curriculo 2
-                        p
-                          a(href="$") curriculo 3
-                        
-                  div.cell.profissionais
-                    div.profissional.card
-                      div.image-container
-                        div.image-cover
-                        img(src="assets/img/dr2.jpg", height="385", width="385")
-                        div.nome-container
-                          h4 DRa Adriana Traczinski
-                      div.card-section
-                        p CRO 10.204
-                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        p 
-                          a(href="$") curriculo 1
-                        p
-                          a(href="$") curriculo 2
-                        p
-                          a(href="$") curriculo 3
-                        
-                  div.cell.profissionais
-                    div.profissional.card
-                      div.image-container
-                        div.image-cover
-                        img(src="assets/img/dr3.jpg", height="385", width="385")
-                        div.nome-container
-                          h4 DRa Adriana Traczinski
-                      div.card-section
-                        p CRO 10.204
-                        p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
-                        p 
-                          a(href="$") curriculo 1
-                        p
-                          a(href="$") curriculo 2
-                        p
-                          a(href="$") curriculo 3
-                        
-      
-      //footer
-      include includes/footer
-      //footer
-    //scripts
-    include includes/foot
-    //scripts
+    div.off-canvas-wrapper
+      div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+        //close button
+        button(class="close-button", aria-label="Close Menu", type="button", data-close)
+          span(aria-hidden="true") &times
+        //Menu
+        include includes/off-canvas-menu
+            
+      div(class="off-canvas-content", data-off-canvas-content)
+        //header
+        include includes/header-internas
+        //header
+        //banner-pagina
+        include includes/banner-pagina
+        //banner-pagina
+        main.main
+          //equipe
+          section.custom-section#equipe
+            div.grid-container
+              div.grid-x.grid-margin-x.grid-padding-x
+                div.cell
+                  h2 Nossos #[span Profissionais]
+                div.cell
+                  div.grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3
+                    div.cell.profissionais
+                      div.profissional.card
+                        div.image-container
+                          div.image-cover
+                          img(src="assets/img/dr1.jpg", height="385", width="385")
+                          div.nome-container
+                            h4 DRa Adriana Traczinski
+                        div.card-section
+                          p CRO 10.204
+                          p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                          p 
+                            a(href="$") curriculo 1
+                          p
+                            a(href="$") curriculo 2
+                          p
+                            a(href="$") curriculo 3
+                          
+                    div.cell.profissionais
+                      div.profissional.card
+                        div.image-container
+                          div.image-cover
+                          img(src="assets/img/dr2.jpg", height="385", width="385")
+                          div.nome-container
+                            h4 DRa Adriana Traczinski
+                        div.card-section
+                          p CRO 10.204
+                          p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                          p 
+                            a(href="$") curriculo 1
+                          p
+                            a(href="$") curriculo 2
+                          p
+                            a(href="$") curriculo 3
+                          
+                    div.cell.profissionais
+                      div.profissional.card
+                        div.image-container
+                          div.image-cover
+                          img(src="assets/img/dr3.jpg", height="385", width="385")
+                          div.nome-container
+                            h4 DRa Adriana Traczinski
+                        div.card-section
+                          p CRO 10.204
+                          p Formada pela XXXXXX em 2004, e especialista em XXXXXXXX pela XXXXXXXXX em 2012 Mestranda em XXXXXXXXX pela XXXXXXXXX.
+                          p 
+                            a(href="$") curriculo 1
+                          p
+                            a(href="$") curriculo 2
+                          p
+                            a(href="$") curriculo 3
+                          
+        
+        //footer
+        include includes/footer
+        //footer
+      //scripts
+      include includes/foot
+      //scripts

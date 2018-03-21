@@ -7,37 +7,38 @@ html(class="no-js", lang="pt-BR", dir="ltr")
     //css
     
   body
-    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
-      //close button
-      button(class="close-button", aria-label="Close Menu", type="button", data-close)
-        span(aria-hidden="true") &times
-      //Menu
-      include includes/off-canvas-menu
-          
-    div(class="off-canvas-content", data-off-canvas-content)
-      //header
-      include includes/header-internas
-      //header
-      //banner-pagina
-      include includes/banner-pagina
-      //banner-pagina
-      //main
-      main.main
-        //sobre
-        section.custom-section#sobre
-          div.grid-container
-            div.grid-x.grid-margin-x.grid-padding-x
-              div.cell.small-12.medium-6
-                h2 Clíninca #[span Ilúmina]
-                p Molestias similique alias sunt ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus, temporibus illum officia minus explicabo iste voluptatem facilis nisi excepturi harum!
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non.
-              div.cell.small-12.medium-6
-                img(src="assets/img/clinica-home.png", height="320", width="582", alt="")
-                        
-      
-      //footer
-      include includes/footer
-      //footer
-    //scripts
-    include includes/foot
-    //scripts
+    div.off-canvas-wrapper
+      div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+        //close button
+        button(class="close-button", aria-label="Close Menu", type="button", data-close)
+          span(aria-hidden="true") &times
+        //Menu
+        include includes/off-canvas-menu
+            
+      div(class="off-canvas-content", data-off-canvas-content)
+        //header
+        include includes/header-internas
+        //header
+        //banner-pagina
+        include includes/banner-pagina
+        //banner-pagina
+        //main
+        main.main
+          //sobre
+          section.custom-section#sobre
+            div.grid-container
+              div.grid-x.grid-margin-x.grid-padding-x
+                div.cell.small-12.medium-6
+                  h2 Clíninca #[span Ilúmina]
+                  p Molestias similique alias sunt ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus, temporibus illum officia minus explicabo iste voluptatem facilis nisi excepturi harum!
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non possimus. Molestias similique alias sunt laborum cupiditate expedita laboriosam enim non.
+                div.cell.small-12.medium-6
+                  img(src="assets/img/clinica-home.png", height="320", width="582", alt="")
+                          
+        
+        //footer
+        include includes/footer
+        //footer
+      //scripts
+      include includes/foot
+      //scripts

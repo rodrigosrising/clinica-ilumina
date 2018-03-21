@@ -10,3 +10,13 @@ $('.hero').slick({
 });
 
 $(document).foundation();
+
+if (Foundation.MediaQuery.is('large')) {
+  if ($('body').height() < $(window).height()) {
+    $('.main').css('padding-bottom', $('.footer').height() + 'px');
+    $('.footer').addClass('fixed');
+  }
+}
+
+console.log($(window).height());
+console.log($('body').height());

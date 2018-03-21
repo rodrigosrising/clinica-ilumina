@@ -7,60 +7,61 @@ html(class="no-js", lang="pt-BR", dir="ltr")
     //css
     
   body
-    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
-      //close button
-      button(class="close-button", aria-label="Close Menu", type="button", data-close)
-        span(aria-hidden="true") &times
-      //Menu
-      include includes/off-canvas-menu
-          
-    div(class="off-canvas-content", data-off-canvas-content)
-      //header
-      include includes/header-internas
-      //header
-      //banner-pagina
-      include includes/banner-pagina
-      //banner-pagina
-      main.main
-        section.custom-section#contato
-          div.grid-container
-            div.grid-x.grid-padding-x
-              div.cell.small-12.medium-7
-                h1 Contato
-                form(action="")
-                  div.grid-x.grid-padding-x
-                    .cell.small-12.large-6
-                      label Nome
-                        input(type="text")
-                    .cell.small-12.large-6
-                      label Email
-                        input(type="email")
-                    .cell.small-12
-                      label Assunto
-                        input(type="text")
-                    .cell.small-12
-                      label Mensagem
-                        textarea
-                    .cell.small-12
-                      button.button ENVIAR
+    div.off-canvas-wrapper
+      div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+        //close button
+        button(class="close-button", aria-label="Close Menu", type="button", data-close)
+          span(aria-hidden="true") &times
+        //Menu
+        include includes/off-canvas-menu
+            
+      div(class="off-canvas-content", data-off-canvas-content)
+        //header
+        include includes/header-internas
+        //header
+        //banner-pagina
+        include includes/banner-pagina
+        //banner-pagina
+        main.main
+          section.custom-section#contato
+            div.grid-container
+              div.grid-x.grid-padding-x
+                div.cell.small-12.medium-7
+                  h1 Contato
+                  form(action="")
+                    div.grid-x.grid-padding-x
+                      .cell.small-12.large-6
+                        label Nome
+                          input(type="text")
+                      .cell.small-12.large-6
+                        label Email
+                          input(type="email")
+                      .cell.small-12
+                        label Assunto
+                          input(type="text")
+                      .cell.small-12
+                        label Mensagem
+                          textarea
+                      .cell.small-12
+                        button.button ENVIAR
+                      
+                div.cell.small-12.medium-5
+                  .responsive-embed
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1659343959545!2d-49.30150308498576!3d-25.43271538378723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3e92a58adf9%3A0x3b2119b52fb4d91b!2sR.+Padre+Anchieta%2C+2050+-+Merc%C3%AAs%2C+Curitiba+-+PR!5e0!3m2!1spt-BR!2sbr!4v1521212668363", width="600", height="450", frameborder="0", style="border:0", allowfullscreen)
+                  div.footer-info
+                    p
+                      strong Ilúmina Odontologia
+                    address
+                      p Rua Padre Ancheita, 2050 - Sala 1705 - 17º anda
+                      p CEP: 80730-000
+                      p Helbor Offices
+                      p Fone: (41) 3029-6820
+                      p contato@iluminaodontologia.com.br
                     
-              div.cell.small-12.medium-5
-                .responsive-embed
-                  iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1659343959545!2d-49.30150308498576!3d-25.43271538378723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3e92a58adf9%3A0x3b2119b52fb4d91b!2sR.+Padre+Anchieta%2C+2050+-+Merc%C3%AAs%2C+Curitiba+-+PR!5e0!3m2!1spt-BR!2sbr!4v1521212668363", width="600", height="450", frameborder="0", style="border:0", allowfullscreen)
-                div.footer-info
-                  p
-                    strong Ilúmina Odontologia
-                  address
-                    p Rua Padre Ancheita, 2050 - Sala 1705 - 17º anda
-                    p CEP: 80730-000
-                    p Helbor Offices
-                    p Fone: (41) 3029-6820
-                    p contato@iluminaodontologia.com.br
-                  
-      //footer
-      include includes/footer
-      //footer
-      
-    //scripts
-    include includes/foot
-    //scripts
+        //footer
+        include includes/footer
+        //footer
+        
+      //scripts
+      include includes/foot
+      //scripts

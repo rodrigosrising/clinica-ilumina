@@ -7,151 +7,152 @@ html(class="no-js", lang="pt-BR", dir="ltr")
     //css
     
   body
-    div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
-      //close button
-      button(class="close-button", aria-label="Close Menu", type="button", data-close)
-        span(aria-hidden="true") &times
-      //Menu
-      include includes/off-canvas-menu
-          
-    div(class="off-canvas-content", data-off-canvas-content)
-      //header
-      include includes/header-internas
-      //header
-      //banner-pagina
-      include includes/banner-pagina
-      //banner-pagina
-      //main
-      main.main
-        section.custom-section#blog-list
-          div.grid-container
-            div.grid-x.grid-margin-x
-              // blog columns
-              div.cell.small-12.medium-8.large-9
-                //blog-post
-                article.blog-post-list
-                  a(href="post.html")
-                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="post.html") Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
-                  div.entry-meta
-                    span.posted-on
+    div.off-canvas-wrapper
+      div(class="off-canvas position-left", id="offCanvasLeft", data-off-canvas)
+        //close button
+        button(class="close-button", aria-label="Close Menu", type="button", data-close)
+          span(aria-hidden="true") &times
+        //Menu
+        include includes/off-canvas-menu
+            
+      div(class="off-canvas-content", data-off-canvas-content)
+        //header
+        include includes/header-internas
+        //header
+        //banner-pagina
+        include includes/banner-pagina
+        //banner-pagina
+        //main
+        main.main
+          section.custom-section#blog-list
+            div.grid-container
+              div.grid-x.grid-margin-x
+                // blog columns
+                div.cell.small-12.medium-8.large-9
+                  //blog-post
+                  article.blog-post-list
+                    a(href="post.html")
+                      img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
+                    h2
+                      a(href="post.html") Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
+                    div.entry-meta
+                      span.posted-on
+                        p.subheader
+                          small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
+                    div.tag-list
                       p.subheader
-                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
-                  a(href="post.html", class="saiba-mais") LEIA MAIS
-                  div.tag-list
-                    p.subheader
-                      small
+                        small
+                          i(class="fa fa-tags" aria-hidden="true") Marcados em:
+                          a(href="", class="button small bg1 mr-button") tag1
+                          a(href="", class="button small bg1 mr-button") iluminaodontologia
+    
+                  //blog-post
+                  article.blog-post-list
+                    a(href="post.html")
+                      img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
+                    h2
+                      a(href="post.html") Titulo do Post
+                    div.entry-meta
+                      span.posted-on
+                        p.subheader
+                          small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
+                    div.tag-list
+                      p.subheader
+                        small
+                          i(class="fa fa-tags" aria-hidden="true") Marcados em:
+                          a(href="", class="button small bg1 mr-button") tag1
+                          a(href="", class="button small bg1 mr-button") odontologia
+                          a(href="", class="button small bg1 mr-button") iluminaodontologia
+    
+                  //blog-post
+                  article.blog-post-list
+                    a(href="post.html")
+                      img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
+                    h2
+                      a(href="post.html") Titulo do Post
+                    div.entry-meta
+                      span.posted-on
+                        p.subheader
+                          small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
+                    div.tag-list
+                      p.subheader
+                        small
                         i(class="fa fa-tags" aria-hidden="true") Marcados em:
                         a(href="", class="button small bg1 mr-button") tag1
                         a(href="", class="button small bg1 mr-button") iluminaodontologia
-  
-                //blog-post
-                article.blog-post-list
-                  a(href="post.html")
-                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="post.html") Titulo do Post
-                  div.entry-meta
-                    span.posted-on
+    
+                  //blog-post
+                  article.blog-post-list
+                    a(href="post.html")
+                      img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
+                    h2
+                      a(href="post.html") Titulo do Post
+                    div.entry-meta
+                      span.posted-on
+                        p.subheader
+                          small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
+                    div.tag-list
                       p.subheader
-                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
-                  a(href="post.html", class="saiba-mais") LEIA MAIS
-                  div.tag-list
-                    p.subheader
-                      small
-                        i(class="fa fa-tags" aria-hidden="true") Marcados em:
-                        a(href="", class="button small bg1 mr-button") tag1
-                        a(href="", class="button small bg1 mr-button") odontologia
-                        a(href="", class="button small bg1 mr-button") iluminaodontologia
-  
-                //blog-post
-                article.blog-post-list
-                  a(href="post.html")
-                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="post.html") Titulo do Post
-                  div.entry-meta
-                    span.posted-on
+                        small
+                          i(class="fa fa-tags" aria-hidden="true") Marcados em:
+                          a(href="", class="button small bg1 mr-button") tag1
+                          a(href="", class="button small bg1 mr-button") iluminaodontologia
+    
+                  //blog-post
+                  article.blog-post-list
+                    a(href="post.html")
+                      img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
+                    h2
+                      a(href="post.html") Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
+                    div.entry-meta
+                      span.posted-on
+                        p.subheader
+                          small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
+                    a(href="post.html", class="saiba-mais") LEIA MAIS
+                    div.tag-list
                       p.subheader
-                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
-                  a(href="post.html", class="saiba-mais") LEIA MAIS
-                  div.tag-list
-                    p.subheader
-                      small
-                      i(class="fa fa-tags" aria-hidden="true") Marcados em:
-                      a(href="", class="button small bg1 mr-button") tag1
-                      a(href="", class="button small bg1 mr-button") iluminaodontologia
-  
-                //blog-post
-                article.blog-post-list
-                  a(href="post.html")
-                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="post.html") Titulo do Post
-                  div.entry-meta
-                    span.posted-on
-                      p.subheader
-                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
-                  a(href="post.html", class="saiba-mais") LEIA MAIS
-                  div.tag-list
-                    p.subheader
-                      small
-                        i(class="fa fa-tags" aria-hidden="true") Marcados em:
-                        a(href="", class="button small bg1 mr-button") tag1
-                        a(href="", class="button small bg1 mr-button") iluminaodontologia
-  
-                //blog-post
-                article.blog-post-list
-                  a(href="post.html")
-                    img(src="http://drguilhermemoreira.com.br/wp-content/uploads/2018/02/demoabrasao-870x398.jpg", alt="")
-                  h2
-                    a(href="post.html") Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto
-                  div.entry-meta
-                    span.posted-on
-                      p.subheader
-                        small 12/03/2018 | #[i(class="fa fa-user", aria-hidden="true")] #[a(href="") Autor do post] Posts Publicados: 12 #[span.comments-link.float-right #[i(class="fa fa-comments" aria-hidden="true")] Nenhum Comentário]
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit enim dicta ab architecto quasi maxime iste blanditiis. Vel obcaecati perspiciatis consequuntur odit fugit praesentium architecto velit impedit unde officiis?
-                  a(href="post.html", class="saiba-mais") LEIA MAIS
-                  div.tag-list
-                    p.subheader
-                      small
-                        i(class="fa fa-tags" aria-hidden="true") Marcados em:
-                        a(href="", class="button small bg1 mr-button") tag1
-                        a(href="", class="button small bg1 mr-button") iluminaodontologia
+                        small
+                          i(class="fa fa-tags" aria-hidden="true") Marcados em:
+                          a(href="", class="button small bg1 mr-button") tag1
+                          a(href="", class="button small bg1 mr-button") iluminaodontologia
+                      
+                  //Pagination
+                  div.pagination-area
+                    ul(class="pagination text-center", role="navigation", aria-label="Pagination")
+                      li(class="pagination-previous disabled") Anterior #[span(class="show-for-sr") página]
+                      li.current #[span(class="show-for-sr") você está na página] 1
+                      li
+                        a(href="#", aria-label="Page 2") 2
+                      li
+                        a(href="#", aria-label="Page 3") 3
+                      li
+                        a(href="#", aria-label="Page 4") 4
+                      li(class="ellipsis", aria-hidden="true")
+                      li
+                        a(href="#", aria-label="Page 12") 12
+                      li
+                        a(href="#", aria-label="Page 13") 13
+                      li(class="pagination-next")
+                        a(href="#", aria-label="Next page") Próxima #[span(class="show-for-sr") página]
+                  //pagination
                     
-                //Pagination
-                div.pagination-area
-                  ul(class="pagination text-center", role="navigation", aria-label="Pagination")
-                    li(class="pagination-previous disabled") Anterior #[span(class="show-for-sr") página]
-                    li.current #[span(class="show-for-sr") você está na página] 1
-                    li
-                      a(href="#", aria-label="Page 2") 2
-                    li
-                      a(href="#", aria-label="Page 3") 3
-                    li
-                      a(href="#", aria-label="Page 4") 4
-                    li(class="ellipsis", aria-hidden="true")
-                    li
-                      a(href="#", aria-label="Page 12") 12
-                    li
-                      a(href="#", aria-label="Page 13") 13
-                    li(class="pagination-next")
-                      a(href="#", aria-label="Next page") Próxima #[span(class="show-for-sr") página]
-                //pagination
-                  
-              //sidebar columns
-              div.cell.small-12.medium-4.large-3
-                include includes/blog-sidebar
-      //main
-      //footer
-      include includes/footer
-      //footer
-      
-    //scripts
-    include includes/foot
-    //scripts
+                //sidebar columns
+                div.cell.small-12.medium-4.large-3
+                  include includes/blog-sidebar
+        //main
+        //footer
+        include includes/footer
+        //footer
+        
+      //scripts
+      include includes/foot
+      //scripts

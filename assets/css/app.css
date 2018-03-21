@@ -644,4 +644,12 @@ p .share-info {
   .social-buttons a:hover {
     color: #233440; }
 
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%; } }
+
 /*# sourceMappingURL=app.css.map */
