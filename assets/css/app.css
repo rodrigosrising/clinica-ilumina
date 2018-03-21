@@ -465,8 +465,8 @@ textarea {
   .especializacao h3 {
     font-family: "Open Sans", sans-serif;
     color: #233440; }
-  .especializacao:nth-child(odd) {
-    background: #FFF; }
+  .especializacao:nth-child(even) {
+    background: #F8F8F8; }
 
 /*BLOG*/
 .blog-post-list {

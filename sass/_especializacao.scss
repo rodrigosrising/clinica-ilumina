@@ -5,7 +5,7 @@
    font-family: $openSans;
    color: lighten($cor1, 0%);
  }
- &:nth-child(odd){
-   background: $cor;
+ &:nth-child(even){
+   background: $cor5;
  }
 }
